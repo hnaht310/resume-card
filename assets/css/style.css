@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
+body {
+  width: 100vw;
+  line-height: 1.75rem;
+  font-family: "Open Sans", sans-serif;
+  gap: 0.5rem;
 }
 
-body {
+.container {
   display: flex;
-  line-height: 1.75rem;
-  margin: 1rem 1rem;
-  font-family: "Open Sans", sans-serif;
-  gap: 1rem;
+  /* align-items: flex-start; */
 }
 
 .icon {
@@ -24,14 +24,15 @@ body {
 .heading {
   display: flex;
   gap: 0.5rem;
+  margin-bottom: 1rem;
   color: rgb(134, 156, 209);
 }
 
-.main {
-  border: 5px solid plum;
-  width: 75vw;
+.left {
+  width: 75%;
   height: auto;
   margin: 1rem;
+  padding-top: 2rem;
 }
 
 .career {
@@ -42,38 +43,28 @@ body {
   margin-bottom: 1rem;
 }
 
-.contact-info {
-  width: 25vw;
-  height: auto;
-  border: 5px solid goldenrod;
+.right {
+  flex: 1;
   margin: 1rem;
   background-color: rgb(165, 179, 215);
 }
 
 .name-card {
   background-color: rgb(134, 156, 209);
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 #main-pic {
   width: 100%;
-  height: auto;
-  max-width: 50vw;
 }
 
-.contact-info .name-card p {
+.right .name-card p {
   color: white;
+  padding-bottom: 1rem;
   margin-left: 0.7rem;
 }
 
 .contact-card {
   color: white;
-  /* max-width: 100%;
-  height: auto;
-  max-height: 100%; */
 }
 
 ul {
@@ -82,19 +73,18 @@ ul {
 
 li {
   list-style: none;
-  display: flex;
-  gap: 5px;
+}
+
+a:link {
+  color: white;
 }
 
 .fa-solid,
 .fa-regular,
 .fa-brands {
   margin: 0.3rem;
+  padding-right: 0.3rem;
 }
-
-/* li p {
-  margin-left: 1rem;
-} */
 
 .details {
   display: flex;
